@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TEA Coder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">  
+</head>
+<body>
+<div class="bg">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="./images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menu_item">
+                    <li><a href="index.html" class="act"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="menu.html"><i class="fa fa-product-hunt"></i> Product</a></li> 
+                    <li><a href="about.html"><i class="fa fa-info-circle"></i> About</a></li>
+                    <li><a href="contact.html"><i class="fa fa-envelope"></i> Contact</a></li>
+                    <li><a href="./login/login.html"><i class="fa fa-user"></i> Login</a></li>
+                </ul>
+            </nav>
+            <a href="index.html"><img src="./images/cart.png" width="30px" height="30px"></a>
+            <img src="./images/menu1.png" class="menu" onclick="menu()">
+        </div>
+    
+        <div class="row">
+            <div class="col">
+                <h1>Welcome to <br><span class="tea">TEA</span> <span class="coder"> Coder</span></h1>
+                <p>Discover what is not discovered! <br>Taste our Milk Tea</p>
+                <button class="btn" onclick="document.getElementById('id01').style.display='block'">Buy now &#8594;</button>
+                <div id="id01" class="modal">
+                    <div class="formC">
+                        <div class="form-btn">
+                         <h2><i class="fa fa-user"></i></h2>
+                         <span onclick="reg()">Register</span>
+                         <span onclick="log()">Login</span>
+                         <hr id="indi">
+                    </div>
+                    
+                    <form id="loginF" action="menu.html">
+                        <input type="text" placeholder="Name">
+                        <input type="password" placeholder="Password" value="" id="myInput">
+                        <button type="submit" class="btn"  onclick="log1();">Login</button>
+                        <input type="checkbox" onclick="myFunction()" style="color:#555; width:15px; height:15px; margin-top:2px; text-align: center; font-size: 20px;"> Show Password<br>
+                         <a href="#" class="fg">Forgot Password?</a>
+                    </form>
+                    <form id="register" action="menu.html">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn"  onclick="reg1();">Register</button>
+                         <a href="#" class="fg">Forgot Password?</a>
+                        </form>
+                     </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./images/prod-front.png" width="85%">
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="categories">
+        <div class="small">
+            <h2 class="title">Best Seller</h2>
+            <div class="row">
+                
+                <div class="col-3">
+                    <img src="./images/Teacoder-special.png">
+                    <h2 class="title1">TEACODER SPECIAL</h4>
+            </div>
+            <div class="col-3">
+                    <img src="./images/Winter-melon.png">
+                    <h2 class="title1">WINTER MELON</h4>
+            </div>
+            <div class="col-3">
+                    <img src="./images/Thai.png">
+                    <h2 class="title1">THAI MILKTEA</h4>
+                        
+            </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <div class="small">
+        <h2 class="title">Menu</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="./milktea/caramel.html" ><img src="./images/Caramel.png" class="img">
+                <h4>Caramel Milktea</h4></a>
+                <p>115.00</p>
+                <style>.fa-star,.fa-star-o,.fa-star-half-o{color:#d19271} .btn2{display: block; color:white; background-color: #d19271; outline: none; padding: 5px 15px; border: none; border-radius: 0.2em; text-align: center; cursor: pointer;}</style>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <button type="submit" onclick="document.getElementById('id01').style.display='block'" class=btn2>Buy now <i class="fa fa-cart-plus" stye="size=px;"></i></button>
+            </div>
+            <div class="col-4">
+                <a href="./milktea/greentea.html"><img src="./images/Greentea.png">
+                <h4>Greentea Milktea</h4></a>
+                <p>125.00</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <button type="submit" onclick="document.getElementById('id01').style.display='block'" class=btn2>Buy now <i class="fa fa-cart-plus" stye="size=px;"></i></button>
+            </div>
+            <div class="col-4">
+                <a href="./milktea/hokkaido.html"><img src="./images/Hokkaido.png">
+                <h4>Hokkaido Milktea</h4></a>
+                <p>135.00</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <button type="submit" onclick="document.getElementById('id01').style.display='block'" class=btn2>Buy now <i class="fa fa-cart-plus" stye="size=px;"></i></button>
+            </div>
+            <div class="col-4">
+                <a href="./milktea/okinawa.html"><img src="./images/Okinawa.png">
+                <h4>Okinawa Milktea</h4></a>
+                <p>135.00</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <button type="submit" onclick="document.getElementById('id01').style.display='block'" class=btn2>Buy now <i class="fa fa-cart-plus" stye="size=px;"></i></button>
+            </div>
+            <br><br>
+            <div class="col-4">
+                <a href="./milktea/oolong.html"><img src="./images/Oolong.png">
+                <h4>Oolong Milktea</h4></a>
+                <p>125.00</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+                <button type="submit" onclick="document.getElementById('id01').style.display='block'" class=btn2>Buy now <i class="fa fa-cart-plus" stye="size=px;"></i></button>
+            </div>
+            <div class="col-4">
+                <a href="./milktea/teacoderspecial.html"><img src="./images/Teacoder-special.png">
+                <h4>TeaCoder Special Milktea</h4></a>
+                <p>125.00</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <button type="submit" onclick="document.getElementById('id01').style.display='block'" class=btn2>Buy now <i class="fa fa-cart-plus" stye="size=px;"></i></button>
+            </div>
+            <div class="col-4">
+                <a href="./milktea/thai.html"><img src="./images/Thai.png">
+                <h4>Thai Milktea</h4></a>
+                <p>135.00</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <button type="submit" onclick="document.getElementById('id01').style.display='block'" class=btn2>Buy now <i class="fa fa-cart-plus" stye="size=px;"></i></button>
+            </div>
+            <div class="col-4">
+                <a href="./milktea/wintermelon.html"><img src="./images/Winter-melon.png">
+                <h4>Winter Melon Milktea</h4></a>
+                <p>135.00</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <button type="submit" onclick="document.getElementById('id01').style.display='block'" class=btn2>Buy now <i class="fa fa-cart-plus" stye="size=px;"></i></button>
+            </div>
+            <br>
+            
+        </div>
+    </div>
+
+    <div class="offer">
+        <div class="small">
+            <div class="row">
+                <div class="col">
+                    <img src="./images/Teacoder-special.png" class="off">
+                </div>
+                <div class="col">
+                    <p>TeaCoder Special</p>
+                    <h1>MILKTEA</h1>
+                    <small>Signature TEA Coder tea with rich creamy fresh milk and topped with tapioca pearls</small><br>
+                    <button class="btn" onclick="document.getElementById('id01').style.display='block'">Buy now &#8594;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="foot">
+                    <form style="max-width:200px;margin:auto" action="mailto:nerisaroseflor@gmail.com">
+                    <h3 class="h3">Contact Me</h3>
+                    <div class="input">
+                        <i class="fa fa-phone icon"></i>
+                        <input class="input-field" type="text" placeholder="Contact No." name="Contact">
+                      </div>
+                      <div class="input">
+                        <i class="fa fa-envelope icon"></i>
+                        <input class="input-field" type="text" placeholder="Email" name="email">
+                        
+                      </div>
+                      <button type="submit" class="btn1">Submit</button>
+                    </form>
+                </div>
+                <div class="foot1">
+                    <img src="./images/logo.png" width="250px">
+                    <p>Discover what is not discovered! Taste our Milk Tea</p>
+                </div>
+                <div class="foot2">
+                    <h3>About Us</h3>
+                    <p>We aim to serve the highest quality milktea and provide uncompromising heartfelt services to our valued guests and community.</p>
+                </div>
+                <div class="footer1">
+                    <h3>Visit my links:</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                    <ul>
+                        facebook | 
+                        youtube |
+                        twitter |
+                        instagram
+                    </ul>
+                </div>
+            </div>
+            <hr>
+	<p class="copy">All right reserves | Copyright &copy; 2021 | <span class="tea">TEA</span> <span class="coder">Coder</span></p>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+    var menu_item = document.getElementById("menu_item");
+    menu_item.style.maxHeight = "0px";
+
+    function menu(){
+        if(menu_item.style.maxHeight == "0px"){
+            menu_item.style.maxHeight = "200px";
+        }else{
+            menu_item.style.maxHeight = "0px";  
+        }
+    }
+
+    var modal = document.getElementById('id01');
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+    var loginF = document.getElementById("loginF")
+    var register = document.getElementById("register")
+    var indi = document.getElementById("indi")
+        function reg(){
+            
+            register.style.transform = "translateX(300px)";
+            loginF.style.transform = "translateX(300px)";
+            indi.style.transform = "translateX(0px)";
+        }
+        function log(){
+            
+            register.style.transform = "translateX(0px)";
+            loginF.style.transform = "translateX(0px)";
+            indi.style.transform = "translateX(100px)";
+        }
+        function reg1(){
+            alert('Register Successful')
+        }
+        function log1(){
+            alert('Login Successful')
+        }
+    </script>
+</body>
+</html>

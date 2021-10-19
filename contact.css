@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: century gothic;
+} 
+.logo img{
+    float: left;
+    width: 120px;
+    height: auto;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+    border-bottom: blue;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin: 25px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+ul li a:hover{
+    background-color: rgba(209, 146, 113,0.8);
+    color: black;
+}
+ul li.active a{
+    background-color: rgba(209, 146, 113,0.8);
+    color: black;
+}
+.container{
+	position: center;
+    padding: 50px 115px; 
+
+}
+#navbar{
+    overflow: hidden;
+    border-bottom: 3px solid #d19271;
+    padding: 5 15px;
+}
+.txt{
+    width: 25%
+}
+textarea{
+    width: 25%
+}
+.contains{
+    padding: 20px;
+    font-size: 13px;
+}
+button{
+    padding: 5px 8px;
+    box-shadow: none;
+    background-color: gray;
+    color: black;
+}
+.pic{
+    padding: 10px;
+    border-radius: 50%;
+    height: 60px;
+    width: 50px;
+}
+.meme{
+    padding: 0px;
+    width: 98%;
+    margin: auto;
+    text-decoration: none;
+}
+li{
+    display: inline;
+}
