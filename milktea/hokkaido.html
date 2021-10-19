@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TEA Coder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/milktea-detail.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">  
+</head>
+<body>
+<div class="bg">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="../index.html"><img src="../images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menu_item">
+                    <li><a href="../index.html" class="act"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="../menu.html"><i class="fa fa-product-hunt"></i> Product</a></li>
+                    <li><a href="../about.html"><i class="fa fa-info-circle"></i> About</a></li>
+                    <li><a href="../contact.html"><i class="fa fa-envelope"></i> Contact</a></li>
+                    <li><a href="../login/login.html"><i class="fa fa-user"></i> Login</a></li>
+                </ul>
+            </nav>
+            <a href="../index.html"><img src="../images/cart.png" width="30px" height="30px"></a>
+            <img src="../images/menu1.png" class="menu" onclick="menu()">
+        </div>
+        </div>
+        
+    <div class="small singlep">
+        <div class="row">
+            <div class="col">
+                <img src="../images/Hokkaido.png" width="100%" id="pr">
+                <div class="small1">
+                    <div class="small2">
+                        <div onclick="before4();"><a id="myImage" onclick="before();">
+                            <img src="../images/Caramel.png"  width="100%" class="small3" ></a></div>
+                    </div>
+                    <div class="small2">
+                        <div onclick="before5();"><a id="myImage" onclick="before1();">
+                            <img  src="../images/Greentea.png" width="100%" class="small3"></a></div>
+                    </div>
+                    <div class="small2">
+                        <div onclick="before6();"><a id="myImage" onclick="before2();">
+                            <img src="../images/Hokkaido.png" width="100%" class="small3"></a></div>
+                    </div>
+                    <div class="small2">
+                        <div onclick="before7();"><a id="myImage" onclick="before3();">
+                            <img src="../images/Okinawa.png" width="100%" class="small3"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <p>Home / Milktea</p>
+                <h1 id="message">Hokkaido Milktea</h1>
+                <h4 id="message1">135.00</h4>
+                <select>
+                    <label>Select Size</label>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+                <input type="number" value="1" onclick="myFunction()">
+                <a href="" class="btn">Buy now</a>
+                <h3>Milktea Details <i class="fa fa-indent"></i></h3>
+                <p>Classic iced hokkaido tea with rich creamy milky taste and topped with tapioca pearls. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="small">
+        <div class="row row2">
+            
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
+    </div>
+    <style>.fa-star,.fa-star-o,.fa-star-half-o{color:#d19271} .btn2{display: block; color:white; background-color: #d19271; outline: none; padding: 5px 15px; border: none; border-radius: 0.2em; text-align: center; cursor: pointer;}</style>
+    <div class="small">
+        <div class="row">
+            <div class="col-4">
+                <a href="../milktea/oolong.html"><img src="../images/Oolong.png">
+                <h4>Oolong Milktea</h4></a>
+                <p>125.00</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+                <button type="submit" onclick="document.getElementById('id01').style.display='block'" class=btn2>Buy now <i class="fa fa-cart-plus" stye="size=px;"></i></button>
+            </div>
+            <div class="col-4">
+                <a href="../milktea/teacoderspecial.html"><img src="../images/Teacoder-special.png">
+                <h4>TeaCoder Special Milktea</h4></a>
+                <p>125.00</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <button type="submit" onclick="document.getElementById('id01').style.display='block'" class=btn2>Buy now <i class="fa fa-cart-plus" stye="size=px;"></i></button>
+            </div>
+            <div class="col-4">
+                <a href="../milktea/thai.html"><img src="../images/Thai.png">
+                <h4>Thai Milktea</h4></a>
+                <p>135.00</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <button type="submit" onclick="document.getElementById('id01').style.display='block'" class=btn2>Buy now <i class="fa fa-cart-plus" stye="size=px;"></i></button>
+            </div>
+            <div class="col-4">
+                <a href="../milktea/wintermelon.html"><img src="../images/Winter-melon.png">
+                <h4>Winter Melon Milktea</h4></a>
+                <p>135.00</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <button type="submit" onclick="document.getElementById('id01').style.display='block'" class=btn2>Buy now <i class="fa fa-cart-plus" stye="size=px;"></i></button>
+            </div>
+         </div>   
+         </div>
+         <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="foot">
+                        <form style="max-width:200px;margin:auto" action="mailto:nerisaroseflor@gmail.com">
+                        <h3 class="h3">Contact Me</h3>
+                        <div class="input">
+                            <i class="fa fa-phone icon"></i>
+                            <input class="input-field" type="text" placeholder="Contact No." name="Contact">
+                          </div>
+                          <div class="input">
+                            <i class="fa fa-envelope icon"></i>
+                            <input class="input-field" type="text" placeholder="Email" name="email">
+                            
+                          </div>
+                          <button type="submit" class="btn1">Submit</button>
+                        </form>
+                    </div>
+                    <div class="foot1">
+                        <img src="../images/logo.png" width="250px">
+                        <p>Discover what is not discovered! Taste our Milk Tea</p>
+                    </div>
+                    <div class="foot2">
+                        <h3>About Us</h3>
+                        <p>We aim to serve the highest quality milktea and provide uncompromising heartfelt services to our valued guests and community.</p>
+                    </div>
+                    <div class="footer1">
+                        <h3>Visit my links:</h3>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                        <ul>
+                            facebook | 
+                            youtube |
+                            twitter |
+                            instagram
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+        <p class="copy">All right reserves | Copyright &copy; 2021 | <span class="tea">TEA</span> <span class="coder">Coder</span></p>
+            </div>
+        </div>
+    <script>
+        function before(){ 
+              document.getElementById('message') 
+              .innerHTML="Caramel Milktea"; 
+          }
+          function before1(){ 
+            document.getElementById('message') 
+              .innerHTML="Greentea Milktea"; 
+          }
+          function before2(){ 
+              document.getElementById('message') 
+              .innerHTML="Hokkaido Milktea"; 
+          }
+          function before3(){ 
+              document.getElementById('message') 
+              .innerHTML="Okinawa Milktea"; 
+          }
+          function before4(){ 
+              document.getElementById('message1') 
+              .innerHTML="115.00"; 
+          }
+          function before5(){ 
+              document.getElementById('message1') 
+              .innerHTML="125.00"; 
+          }
+          function before6(){ 
+              document.getElementById('message1') 
+              .innerHTML="135.00"; 
+          }
+          function before7(){ 
+              document.getElementById('message1') 
+              .innerHTML="135.00"; 
+          }
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+
+    var menu_item = document.getElementById("menu_item");
+    menu_item.style.maxHeight = "0px";
+
+    function menu(){
+        if(menu_item.style.maxHeight == "0px"){
+            menu_item.style.maxHeight = "200px";
+        }else{
+            menu_item.style.maxHeight = "0px";  
+        }
+    }
+
+    var modal = document.getElementById('id01');
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+   var pr = document.getElementById("pr");
+   var small3 = document.getElementsByClassName("small3");
+        small3[0].onclick = function(){
+            pr.src=small3[0].src;
+        }
+        small3[1].onclick = function(){
+            pr.src=small3[1].src;
+        }
+        small3[2].onclick = function(){
+            pr.src=small3[2].src;
+        }
+        small3[3].onclick = function(){
+            pr.src=small3[3].src;
+        }
+        
+    </script>
+</body>
+</html>
